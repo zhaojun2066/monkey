@@ -1,7 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="302e2111-af69-4825-9024-8601385771a0" name="Default" comment="" />
+    <list default="true" id="302e2111-af69-4825-9024-8601385771a0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/MonkeySpider$SpiderService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/MonkeySpider.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/Spider.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/analyzer/Analyzer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/analyzer/DemoAnalyzer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/common/CommonUtil$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/common/CommonUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/common/Html.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/common/Page.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/common/ProxyInfo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/common/Request.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/common/ResultItems.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/common/Site.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/common/TransferData.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/common/Url.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/common/utils/UrlUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/downloader/CustomRedirectStrategy.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/downloader/Downloader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/downloader/HttpClientDownloader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/downloader/HttpConnectionPoolManager$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/downloader/HttpConnectionPoolManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/downloader/ProxyUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/downloader/balance/BalanceProxy.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/downloader/balance/RRBalanceProxy.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/exception/MokeyException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/parse/Parse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/transfers/ConsoleTransfers.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/target/classes/com/mokey/transfers/Transfers.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey-test/target/classes/com/monkey/jsoup/HttpClientTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey-test/target/classes/com/monkey/jsoup/JsoupTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_1_23.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_unknown.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_unknown.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/thriftCompiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/mokey-core.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/MonkeySpider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/Spider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/analyzer/Analyzer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/analyzer/DemoAnalyzer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/CommonUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/Html.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/Page.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/ProxyInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/Request.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/ResultItems.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/Site.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/TransferData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/Url.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/utils/UrlUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/CustomRedirectStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/Downloader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/HttpClientDownloader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/HttpConnectionPoolManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/ProxyUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/balance/BalanceProxy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/balance/RRBalanceProxy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/exception/MokeyException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/parse/Parse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/transfers/ConsoleTransfers.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/transfers/Transfers.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey-manager/monkey-manager.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey-manager/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey-master/monkey-master.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey-master/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey-task/monkey-task.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey-task/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey-test/monkey-test.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey-test/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey-test/src/main/java/com/monkey/jsoup/HttpClientTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey-test/src/main/java/com/monkey/jsoup/JsoupTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/monkey-master/target/" />

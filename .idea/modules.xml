@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mokey-core/mokey-core.iml" filepath="$PROJECT_DIR$/mokey-core/mokey-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monkey.iml" filepath="$PROJECT_DIR$/monkey.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monkey-manager/monkey-manager.iml" filepath="$PROJECT_DIR$/monkey-manager/monkey-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monkey-master/monkey-master.iml" filepath="$PROJECT_DIR$/monkey-master/monkey-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monkey-task/monkey-task.iml" filepath="$PROJECT_DIR$/monkey-task/monkey-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monkey-test/monkey-test.iml" filepath="$PROJECT_DIR$/monkey-test/monkey-test.iml" />
+    </modules>
+  </component>
+</project>

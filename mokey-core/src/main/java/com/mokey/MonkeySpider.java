@@ -3,17 +3,18 @@ package com.mokey;
 import com.mokey.analyzer.Analyzer;
 import com.mokey.analyzer.DemoAnalyzer;
 import com.mokey.common.*;
-import com.mokey.common.utils.UrlUtils;
 import com.mokey.downloader.Downloader;
 import com.mokey.downloader.HttpClientDownloader;
 import com.mokey.exception.MokeyException;
+import com.mokey.scheduler.LinkedBlockingQueueScheduler;
+import com.mokey.scheduler.Scheduler;
 import com.mokey.transfers.ConsoleTransfers;
 import com.mokey.transfers.Transfers;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @User: jufeng
@@ -23,22 +24,40 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class MonkeySpider {
 
     public static void  main(String [] args){
+        Site site = Site.me().setDomain("blog.csdn.net")
+                                .setCharset("utf-8");
         MonkeySpider.me().setDownloader(new HttpClientDownloader(10,2))
                 .setAnalyzer(new
-                         DemoAnalyzer()).setTransfers(new ConsoleTransfers()).spider(
-                Site.me().setDomain("blog.csdn.net")
-                        .addUrl(Url.me("http://blog.csdn.net/column/details/jsoup.html")
-                        .setCharset("utf-8"))
-        );
+                         DemoAnalyzer()).setTransfers(new ConsoleTransfers()
+        ).setSite(site).addRequest(Request.me().setUrl("http://blog.csdn.net/column/details/jsoup.html"))
+                .spider();
     }
 
     private Downloader downloader;
     private Analyzer analyzer;
     private Transfers transfers;
-    private Map<String,ThreadPoolExecutor> tasks = new HashMap<String, ThreadPoolExecutor>();
+    private Scheduler scheduler;
+    private Site site;
+    private ThreadPoolExecutor spiderPool;
 
     public static MonkeySpider me(){
         return new MonkeySpider();
+    }
+
+
+    public MonkeySpider setScheduler(Scheduler scheduler) {
+        this.scheduler = scheduler;
+        return this;
+    }
+
+    public MonkeySpider setSite(Site site) {
+        this.site = site;
+        return this;
+    }
+
+    public MonkeySpider setSpiderPool(ThreadPoolExecutor spiderPool) {
+        this.spiderPool = spiderPool;
+        return this;
     }
 
     public MonkeySpider setDownloader(Downloader downloader){
@@ -56,18 +75,10 @@ public class MonkeySpider {
         return this;
     }
 
-
-
-
-
-    private void checkWorkPool(Site site){
-        if (!tasks.containsKey(site.getDomain())){
-            ThreadPoolExecutor pool = site.getSpiderPool();
-            tasks.put(site.getDomain(),pool);
-        }
-    }
-
     private void check(){
+        if (site==null){
+            throw  new MokeyException("Site can not be null.");
+        }
         if (downloader==null){
             downloader = new HttpClientDownloader();
         }
@@ -78,57 +89,51 @@ public class MonkeySpider {
         if (transfers==null){
             transfers = new ConsoleTransfers();
         }
+
+        if (spiderPool==null){
+            spiderPool = new ThreadPoolExecutor(2,2,60, TimeUnit.SECONDS,
+                    new ArrayBlockingQueue<Runnable>(2));
+        }
+        if (scheduler==null){
+            scheduler = new LinkedBlockingQueueScheduler();
+        }
     }
 
-    public void spider(Site site){
-        //todo: scheduler
+
+
+    public void spider(){
         check();
-        checkWorkPool(site);
-
-        List<Url> urls = site.getUrls();
-        if (!CommonUtil.isEmpty(urls)){
-            for (Url url : urls){
-                final Request request = Request.me()
-                        .setCharset(url.getCharset())
-                        .setUrl(url.getUrl())
-                        .setHeaders(url.getHeaders())
-                        .setCookies(url.getCookies());
-                ThreadPoolExecutor service = tasks.get(site.getDomain());
-                if (service==null){
-                    tasks.put(site.getDomain(),site.getSpiderPool());
-                }
-                service.submit(new SpiderService(request,site));
+        while (true){
+            Request request = scheduler.get();
+            if (request!=null){
+                spiderPool.submit(new SpiderService(request));
             }
         }
     }
 
-    public void spider(List<Site> siteList ){
-        if (!CommonUtil.isEmpty(siteList)){
-            for (Site site: siteList){
-                spider(site);
-            }
-        }else {
-            throw new MokeyException("siteList can not be empty");
-        }
+
+    public MonkeySpider addRequest(Request request){
+       scheduler.put(request);
+       return this;
     }
 
+    public MonkeySpider addRequest(List<Request> requestList){
+        if (!CommonUtil.isEmpty(requestList)){
+            for (Request request: requestList){
+                scheduler.put(request);
+            }
+        }
 
-
-    public void spider(Url url){
-        String domain = UrlUtils.getDomain(url.getUrl());
-        Site site = Site.me().addUrl(url).setDomain(domain);
-        spider(site);
+        return this;
     }
 
 
 
     class SpiderService implements Runnable{
         private Request request;
-        private Site site;
 
-        public SpiderService(Request request, Site site) {
+        public SpiderService(Request request) {
             this.request = request;
-            this.site = site;
         }
 
         @Override

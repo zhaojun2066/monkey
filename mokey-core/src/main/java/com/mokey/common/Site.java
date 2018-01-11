@@ -27,10 +27,9 @@ public class Site {
     private Map<String, String> defaultHeaders = new HashMap<String, String>();
     private Integer acceptStatCode = 200;
 
-    private ThreadPoolExecutor spiderPool = new ThreadPoolExecutor(2,2,60, TimeUnit.SECONDS,
-            new ArrayBlockingQueue<Runnable>(2));
 
-    private List<Url> urls = new ArrayList<Url>();
+
+    //private List<Url> urls = new ArrayList<Url>();
 
 
     private boolean disableCookieManagement = false;
@@ -45,16 +44,9 @@ public class Site {
         return useGzip;
     }
 
-    public ThreadPoolExecutor getSpiderPool() {
-        return spiderPool;
-    }
 
-    public Site setSpiderPool(ThreadPoolExecutor spiderPool) {
-        this.spiderPool = spiderPool;
-        return this;
-    }
 
-    public List<Url> getUrls() {
+  /*  public List<Url> getUrls() {
         return urls;
     }
 
@@ -66,7 +58,7 @@ public class Site {
     public Site addUrl(Url url){
         this.urls.add(url);
         return this;
-    }
+    }*/
 
     public Site setUseGzip(boolean useGzip) {
         this.useGzip = useGzip;

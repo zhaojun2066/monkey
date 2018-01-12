@@ -16,7 +16,7 @@ public class Request {
     private String method;
 
 
-   // private List<Request> nextRequestList = new ArrayList<Request>();
+   private List<Request> nextRequestList = new ArrayList<Request>();
 
 
     private Map<String, String> cookies = new HashMap<String, String>();
@@ -86,7 +86,7 @@ public class Request {
         return this;
     }
 
-  /*  public List<Request> getNextRequestList() {
+    public List<Request> getNextRequestList() {
         return nextRequestList;
     }
 
@@ -98,5 +98,5 @@ public class Request {
     public Request addNextRequest(Request nextRequest) {
         this.nextRequestList.add(nextRequest);
         return this;
-    }*/
+    }
 }

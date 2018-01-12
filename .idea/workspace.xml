@@ -2,42 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="302e2111-af69-4825-9024-8601385771a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/monkey-master/src/main/resources/spider.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mokey-core/mokey-core.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/monkey-task/monkey-task.iml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/pom.xml" afterPath="$PROJECT_DIR$/monkey-core/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/MonkeySpider.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/MonkeySpider.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/Spider.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/Spider.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/analyzer/Analyzer.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/analyzer/Analyzer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/analyzer/DemoAnalyzer.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/analyzer/DemoAnalyzer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/CommonUtil.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/CommonUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/Html.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Html.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/Page.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Page.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/ProxyInfo.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/ProxyInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/Request.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Request.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/ResultItems.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/ResultItems.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/Site.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Site.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/TransferData.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/TransferData.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/Url.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Url.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/common/utils/UrlUtils.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/utils/UrlUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/CustomRedirectStrategy.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/downloader/CustomRedirectStrategy.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/Downloader.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/downloader/Downloader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/HttpClientDownloader.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/downloader/HttpClientDownloader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/HttpConnectionPoolManager.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/downloader/HttpConnectionPoolManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/ProxyUtil.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/downloader/ProxyUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/balance/BalanceProxy.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/downloader/balance/BalanceProxy.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/downloader/balance/RRBalanceProxy.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/downloader/balance/RRBalanceProxy.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/exception/MokeyException.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/exception/MokeyException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/parse/Parse.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/parse/Parse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/scheduler/LinkedBlockingQueueScheduler.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/scheduler/LinkedBlockingQueueScheduler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/scheduler/Scheduler.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/scheduler/Scheduler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/transfers/ConsoleTransfers.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/transfers/ConsoleTransfers.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mokey-core/src/main/java/com/mokey/transfers/Transfers.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/transfers/Transfers.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/monkey-task/pom.xml" afterPath="$PROJECT_DIR$/monkey-slave/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Request.java" afterPath="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Request.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monkey-master/src/main/resources/spider.json" afterPath="$PROJECT_DIR$/monkey-master/src/main/resources/spider.json" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,8 +28,8 @@
       <file leaf-file-name="spider.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/monkey-master/src/main/resources/spider.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="306">
+              <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -71,7 +38,7 @@
       <file leaf-file-name="Site.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Site.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="102">
               <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="43" />
               <folding />
             </state>
@@ -81,9 +48,26 @@
       <file leaf-file-name="Request.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Request.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="86" column="5" lean-forward="false" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="1445">
+              <caret line="100" column="5" lean-forward="false" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+              <folding>
+                <element signature="e#321#330#0" expanded="true" />
+                <element signature="e#1752#1753#0" expanded="true" />
+                <element signature="e#1790#1791#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Page.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1054">
+              <caret line="85" column="19" lean-forward="false" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
+              <folding>
+                <element signature="e#1743#1744#0" expanded="true" />
+                <element signature="e#1777#1778#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,9 +153,9 @@
         <option value="$PROJECT_DIR$/monkey-core/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/Spider.java" />
-        <option value="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Request.java" />
         <option value="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/ResultItems.java" />
         <option value="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/MonkeySpider.java" />
+        <option value="$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Request.java" />
         <option value="$PROJECT_DIR$/monkey-master/src/main/resources/spider.json" />
       </list>
     </option>
@@ -236,25 +220,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="monkey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monkey" type="462c0819:PsiDirectoryNode" />
-              <item name="monkey-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mokey" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="monkey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monkey" type="462c0819:PsiDirectoryNode" />
-              <item name="monkey-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mokey" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="monkey" type="b2602c69:ProjectViewProjectNode" />
@@ -516,7 +481,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2039897" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.394958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41512606" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41403025" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1988417" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
@@ -740,6 +705,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#241#242#0" expanded="false" />
+            <element signature="e#275#276#0" expanded="false" />
+            <element signature="e#440#441#0" expanded="false" />
+            <element signature="e#466#467#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -917,17 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1106">
-          <caret line="85" column="19" lean-forward="false" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
-          <folding>
-            <element signature="e#1743#1744#0" expanded="true" />
-            <element signature="e#1777#1778#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/monkey-core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-190">
@@ -955,26 +915,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="86" column="5" lean-forward="false" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Site.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="102">
           <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="100" column="5" lean-forward="false" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+          <folding>
+            <element signature="e#321#330#0" expanded="true" />
+            <element signature="e#1752#1753#0" expanded="true" />
+            <element signature="e#1790#1791#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monkey-core/src/main/java/com/mokey/common/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="85" column="19" lean-forward="false" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
+          <folding>
+            <element signature="e#1743#1744#0" expanded="true" />
+            <element signature="e#1777#1778#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/monkey-master/src/main/resources/spider.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="306">
+          <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
           <folding />
         </state>
       </provider>

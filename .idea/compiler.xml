@@ -7,17 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mokey-core" />
+        <module name="monkey-core" />
         <module name="monkey-manager" />
         <module name="monkey-master" />
-        <module name="monkey-task" />
+        <module name="monkey-slave" />
         <module name="monkey-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mokey-core" target="1.6" />
       <module name="monkey" target="1.5" />
+      <module name="monkey-core" target="1.6" />
       <module name="monkey-manager" target="1.5" />
       <module name="monkey-master" target="1.5" />
+      <module name="monkey-slave" target="1.5" />
       <module name="monkey-task" target="1.5" />
       <module name="monkey-test" target="1.5" />
       <module name="webmagic-demo" target="1.5" />

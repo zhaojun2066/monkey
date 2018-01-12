@@ -12,6 +12,9 @@ public class ResultItems {
 
     private Map<String, Object> fields = new LinkedHashMap<String, Object>();
 
+    public boolean isEmpty(){
+        return CommonUtil.isEmpty(fields);
+    }
 
 
     public <T> T get(String key) {

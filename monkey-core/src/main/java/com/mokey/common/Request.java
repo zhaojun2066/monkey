@@ -1,6 +1,8 @@
 package com.mokey.common;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -12,6 +14,9 @@ public class Request {
 
     private String url;
     private String method;
+
+
+   // private List<Request> nextRequestList = new ArrayList<Request>();
 
 
     private Map<String, String> cookies = new HashMap<String, String>();
@@ -80,4 +85,18 @@ public class Request {
         headers.put(name, value);
         return this;
     }
+
+  /*  public List<Request> getNextRequestList() {
+        return nextRequestList;
+    }
+
+    public Request addNextRequestList(List<Request> nextRequestList) {
+        this.nextRequestList = nextRequestList;
+        return this;
+    }
+
+    public Request addNextRequest(Request nextRequest) {
+        this.nextRequestList.add(nextRequest);
+        return this;
+    }*/
 }

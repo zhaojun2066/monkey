@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
  * @Date: 18-1-4
  * @Time: 下午11:36
  **/
-public class MonkeySpider {
+public class MonkeySpider implements Spider{
 
     public static void  main(String [] args){
         Site site = Site.me().setDomain("blog.csdn.net")
@@ -111,6 +111,32 @@ public class MonkeySpider {
         }
     }
 
+    @Override
+    public void onSuccess(Page page) {
+        analyzer.analyzer(page,null);
+        if (page.getResultItems()!=null && !page.getResultItems().isEmpty()){
+            TransferData transferData = new TransferData();
+            transferData.setResultItems(page.getResultItems());
+            transferData.setUrl(page.getRequest().getUrl());
+            transfers.transfer(transferData);
+        }
+    }
+
+    @Override
+    public void onError(Page page) {
+
+    }
+
+    @Override
+    public void shutdownNow() {
+
+    }
+
+    @Override
+    public void stop() {
+        downloader.close(site.getDomain());
+    }
+
 
     public MonkeySpider addRequest(Request request){
        scheduler.put(request);
@@ -140,12 +166,9 @@ public class MonkeySpider {
         public void run() {
             Page page = downloader.download(request,site);
             if (page.isDownloadSuccess()){
-                analyzer.analyzer(page);
-                TransferData transferData = new TransferData();
-                transferData.setResultItems(page.getResultItems());
-                transferData.setUrl(page.getRequest().getUrl());
-                transfers.transfer(transferData);
+                onSuccess(page);
             }else {
+                onError(page);
                 //if fail then re submit to spider
                 System.out.println("download failed...........");
             }

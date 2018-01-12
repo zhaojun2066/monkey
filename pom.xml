@@ -11,9 +11,9 @@
     <modules>
         <module>monkey-manager</module>
         <module>monkey-master</module>
-        <module>monkey-task</module>
-        <module>mokey-core</module>
+        <module>monkey-core</module>
         <module>monkey-test</module>
+        <module>monkey-slave</module>
     </modules>
 
 

@@ -4,6 +4,8 @@ import com.mokey.common.Page;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.util.Map;
+
 /**
  * @User: jufeng
  * @Date: 18-1-10
@@ -11,7 +13,7 @@ import org.jsoup.select.Elements;
  **/
 public class DemoAnalyzer implements Analyzer{
     @Override
-    public void analyzer(Page page) {
+    public void analyzer(Page page, Map<String,String> customerParams) {
         System.out.println(page.getDocument());
         Elements elements = null;
 
